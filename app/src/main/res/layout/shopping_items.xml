@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="9"
-        android:text="Name"
-        android:textColor="@android:color/white"
+        android:text="@string/name"
+        android:textColor="#039BE5"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Amount"
-        android:textColor="@android:color/white"
+        android:text="@string/amount"
+        android:textColor="#039BE5"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ivMinus"
@@ -33,26 +35,29 @@
         android:id="@+id/ivDelete"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:contentDescription="delete"
         android:layout_marginTop="16dp"
         android:clickable="true"
+        android:contentDescription="@string/delete"
         android:focusable="true"
         android:src="@drawable/ic_delete"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/ivPlus"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_plus"
         android:clickable="true"
+        android:contentDescription="@string/plus"
         android:focusable="true"
+        android:src="@drawable/ic_plus"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/ivMinus"
@@ -61,12 +66,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
+        android:contentDescription="@string/minus"
         android:focusable="true"
         android:src="@drawable/ic_minus"
         android:textSize="20sp"
-        app:tint="#807676"
         app:layout_constraintEnd_toStartOf="@+id/ivPlus"
-        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        app:tint="#807676"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 
