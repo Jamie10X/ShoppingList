@@ -5,4 +5,9 @@
     <string name="plus">plus</string>
     <string name="name">name</string>
     <string name="amount">amount</string>
+    <string name="addshoppitem">Add new shopping item</string>
+    <string name="namee">Name</string>
+    <string name="amountt">Amount</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add">ADD</string>
 </resources>
